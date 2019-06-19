@@ -12,7 +12,7 @@ helptext() {
 	echo "	--python: A new Python template"
 	echo "	--texreport: A new LaTeX Report template"
 	echo "	--texarticle: A new LaTeX Article template"
-	echo "  --comp: A new Competitive Coding template in C++"
+	echo "	--comp: A new Competitive Coding template in C++"
 }
 
 createFile() {
