@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Kill any existing player that was invoked by the same script.
+ if [[ `ps aux | grep "st -n music" | wc -l` -ge 3 ]]
+ then
+		 ps aux | grep "st -n music" | head -n1 | awk '{print $2}' | xargs kill
+		 notify-send "Another Music Player is running. Killing it.."
+ fi
+
+case $(echo -en "Favorites\nRandomly Play Everything\nMalayalam\nSearch English Songs\nSearch Malayalam Songs\nArtists\nMood" | dmenu -l 4) in 
+	"Randomly Play Everything")
+		mpv --quiet --shuffle "/home/rwithik/Music/English/Everything.m3u"
+		;;
+	"Favorites")
+		mpv --quiet --shuffle "/home/rwithik/Music/English/Favorites.m3u"
+		;;
+	Malayalam)
+		mpv --quiet --shuffle "/home/rwithik/Music/Malayalam"
+		;;
+	Artists)
+		mpv --quiet --shuffle "/home/rwithik/Music/English/$(echo -en 'Alan Walker\nThe Chainsmokers\nMarshmello' | dmenu -l 3).m3u"
+		;;
+#	Genre)
+#		mpv --shuffle "/home/rwithik/Music/English/$(echo -en 'Alan Walker\nSad' | dmenu -l 3).m3u"
+#		;;
+	Mood)
+		mpv --quiet --shuffle "/home/rwithik/Music/English/$(echo -en 'Upbeat\nCalm\nSad' | dmenu -l 3).m3u"
+		;;
+	"Search English Songs")
+		mpv --quiet --loop "/home/rwithik/Music/English/`ls ~/Music/English -1 | dmenu -l 20`"
+		;;
+	"Search Malayalam Songs")
+		mpv --quiet --loop "/home/rwithik/Music/Malayalam/`ls ~/Music/Malayalam -1 | dmenu -l 20`"
+		;;
+esac

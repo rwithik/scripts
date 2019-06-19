@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pdflatex -shell-escape $1 >> /dev/null || echo "Errors were present"
