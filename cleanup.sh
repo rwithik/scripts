@@ -21,6 +21,9 @@ fi
 if [[ ! -d E-Books ]]; then
 	mkdir E-Books
 fi
+# if [[ ! -d Mics ]]; then
+# 	mkdir Misc
+# fi
 
 mv -v ./*.pdf ./PDFs/ 2> /dev/null
 mv -v ./*.jpg ./*.jpeg ./*.png ./Images/ 2> /dev/null

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CHOICE="$(echo -en 'List\nAdd Entry\nMark as Done' | dmenu -l 3)"
+CHOICE="$(echo -en 'List\nAdd Entry\nMark as Done' | rofi -dmenu -l 3)"
 
 case $CHOICE in
 	"List")

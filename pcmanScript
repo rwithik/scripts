@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CHOICE=$(echo -en "Screenshots\nDownloads\nDesktop\nPictures\nDocuments\nMusic\nProjects\nOther" | dmenu)
+CHOICE=$(echo -en "Screenshots\nDownloads\nDesktop\nPictures\nDocuments\nMusic\nProjects\nOther" | rofi -dmenu)
 
 case $CHOICE in
 	Downloads|Desktop|Pictures|Documents|Music )

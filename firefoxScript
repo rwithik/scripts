@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CHOICE=`cat ~/Desktop/Scripts/sites | dmenu -l 5`
+CHOICE=`cat ~/Desktop/Scripts/sites | rofi -dmenu -l 5`
 
 case $CHOICE in 
 	Search )
