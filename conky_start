@@ -1,7 +1,8 @@
 #!/bin/bash
 
+wal -R
 killall conky
 conky -c /home/rwithik/.config/conky/birthday_conky -d
 conky -c /home/rwithik/.config/conky/date_conky -d
+conky -c /home/rwithik/.config/conky/todo_conky -d
 
-wal -R
