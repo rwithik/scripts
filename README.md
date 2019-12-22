@@ -14,13 +14,13 @@ Categorizes most of the files in the current directory as PDFs, Images, Code, et
 
 Script that start three different instances of conky.
 
-Requirements: conky (Obviously)
+Requirements: [conky](https://github.com/brndnmtthws/conky) (Obviously)
 
 ### display.sh
 
 Helper script to manage displays. Can show the currently available display, and switch to duplicate or extend modes. 
 
-Requirements: rofi
+Requirements: [rofi](https://github.com/davatorium/rofi)
 
 ### firefoxScript
 
@@ -38,13 +38,13 @@ Requirements: pdflatex in your $PATH
 
 Example script taken from the i3lock-color repo. Lockscreen, with bar ;)
 
-Requirements: i3lock-color
+Requirements: [i3lock-color](https://github.com/PandorasFox/i3lock-color)
 
 ### lockscreen.sh
 
 The code for this script is taken from multiple sources, with a few edits of my own. It takes a screenshot, pixilates it and sets it as the lockscreen.
 
-Requirements: i3-lock-color
+Requirements: [i3lock-color](https://github.com/PandorasFox/i3lock-color)
 
 ### lock.sh
 
@@ -54,13 +54,13 @@ Yet another lockscreen script. Don't remember what it does. Can't seem to run it
 
 Compiles the markdown file to HTML documents.
 
-Requirements: pandoc
+Requirements: [pandoc](https://pandoc.org)
 
 ### music
 
 Music player script. Fun times. 
 
-Requirements: mpv as the musicplayer. playerctl if you want the status bar block too.
+Requirements: [mpv](https://github.com/mpv-player/mpv) as the musicplayer. [playerctl](https://github.com/acrisci/playerctl) if you want the status bar block too.
 
 ### new
 
@@ -82,10 +82,11 @@ Requirements: pcmanfm
 ### prompt
 
 Simple yes/no prompt with dmenu. If yes, run the command. 
-
+```
 Usage: prompt [prompt string] [command to run]
+```
 
-Requirements: dmenu
+Requirements: [dmenu](https://tools.suckless.org/dmenu/)
 
 ### rangerScript
 
@@ -93,11 +94,11 @@ Ranger alternative to the pcman script.
 
 Current status: Broken
 
-Requirements: ranger
+Requirements: [ranger](https://github.com/ranger/ranger)
 
 ### shortcuts
 
-Script that auto generates my folder aliases for zsh and ranger.
+Script that auto generates my folder aliases for zsh and ranger. Idea from Luke Smith.
 
 ### start-server.sh
 
